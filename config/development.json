@@ -1,0 +1,8 @@
+{
+  "db": {
+    "host": "clusterkanji-itv0v.mongodb.net",
+    "username": "admin",
+    "password": "admin123",
+    "database": "YourKanji"
+  }
+}
