@@ -7,6 +7,8 @@ import {
   dbName,
 } from './config/variables.config';
 import { KanjiModule } from './kanji/kanji.module';
+import { AuthModule } from './auth/auth.module';
+import { UserModule } from './user/user.module';
 
 const URL_DATABASE = `mongodb+srv://${dbUsername}:${dbPassword}@${dbHost}/${dbName}?retryWrites=true&w=majority`;
 console.log(URL_DATABASE);
@@ -17,6 +19,8 @@ console.log(URL_DATABASE);
       useNewUrlParser: true,
     }),
     KanjiModule,
+    AuthModule,
+    UserModule,
   ],
 })
 export class AppModule {}
